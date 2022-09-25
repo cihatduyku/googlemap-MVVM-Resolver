@@ -1,0 +1,48 @@
+PODS:
+  - Alamofire (5.6.2)
+  - CocoaDebug (1.7.2)
+  - GoogleMaps (7.1.0):
+    - GoogleMaps/Maps (= 7.1.0)
+  - GoogleMaps/Base (7.1.0)
+  - GoogleMaps/Maps (7.1.0):
+    - GoogleMaps/Base
+  - GooglePlaces (7.1.0)
+  - Kingfisher (7.3.2)
+  - R.swift (6.1.0):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
+  - Resolver (1.5.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - CocoaDebug
+  - GoogleMaps
+  - GooglePlaces
+  - Kingfisher
+  - R.swift
+  - Resolver
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CocoaDebug
+    - GoogleMaps
+    - GooglePlaces
+    - Kingfisher
+    - R.swift
+    - R.swift.Library
+    - Resolver
+
+SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  CocoaDebug: 61cf93ada6ce8f3407507dc01f9b874d91ac1d5c
+  GoogleMaps: bc56ffb0324e345a2d91bac1a64a920f9c8f1b20
+  GooglePlaces: 187946335ec3dc624de71c0a9ddcc712f19b0ee1
+  Kingfisher: 0086ad83719761ba9b2cdaf6ef4d5b4878cbae23
+  R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  Resolver: 68984624572763018fd8ec7b8e3e8df0e3b6bba5
+
+PODFILE CHECKSUM: deae194918bd144fb56082defe0844431496b12c
+
+COCOAPODS: 1.11.3
