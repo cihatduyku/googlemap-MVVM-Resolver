@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="googlemapcase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s2n-yb-iDX" customClass="MapView" customModule="googlemapcase" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="730"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9p-SC-2Ms">
+                                <rect key="frame" x="16" y="750" width="358" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="M3P-S0-QuX"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Yer Ara!"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="searchButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="hDd-wr-t8h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="s2n-yb-iDX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="0Sx-Jb-YQ4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="C9p-SC-2Ms" secondAttribute="bottom" constant="20" id="7Fe-dJ-zR7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="C9p-SC-2Ms" secondAttribute="trailing" constant="16" id="SEJ-NF-gVr"/>
+                            <constraint firstItem="C9p-SC-2Ms" firstAttribute="top" secondItem="s2n-yb-iDX" secondAttribute="bottom" constant="20" id="URO-6g-uHO"/>
+                            <constraint firstItem="s2n-yb-iDX" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="qjh-eh-lCd"/>
+                            <constraint firstItem="C9p-SC-2Ms" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="tdY-g7-aWW"/>
+                            <constraint firstItem="s2n-yb-iDX" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="yws-WO-M6v"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="s2n-yb-iDX" id="Ncr-YS-Mda"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26.153846153846153" y="-34.123222748815166"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
